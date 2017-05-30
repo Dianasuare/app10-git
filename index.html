@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Decima Aplicación</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}s
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/ATLIXCO6.jpg','imagenes/ATLIXCO7.1.jpg','imagenes/atlixco10.1.jpg','imagenes/atlixco11.1.jpg','imagenes/VACACIONAL1.jpg','imagenes/ATLIXCO8.1.jpg','imagenes/ATLIXCO12.1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>ATLIXCO, PUEBLA</h1>
+ </div>
+<div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2> ATLIXCO</h2>
+           <p>Se muestra una breve información</p>
+        </a>
+        </li>
+       <li class="ui-first-child ui-last-child">
+       <a href ="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>HOSPITAL MUNICIPAL Y PINACOTECA SAN JUAN DE DIOS</h2>
+          <p>Se muestra una breve información</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href ="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> CENTRO CULTURAL EL CARMEN</h2>
+          <p>Se muestra una breve información</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>EX CONVENTO FRANCISCANO</h2>
+         <p>Se muestra una breve información</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CERRO DE SAN MIGUEL</h2>
+           <p>Se muestra una breve información</p>
+       </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>GASTRONOMIA</h2>
+         <p>Se muestran imagenes de la gastronomia que hsy</p>
+       </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2><strong>VISITA METEPEC, UN LUGAR DIFERENTE.</strong></h2>
+           <p>Se muestra una breve información</p>
+        </a>
+        </li>
+         <li class="ui-first-child ui-last-child">
+       <a href ="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>VILLA ILUMINADA</h2>
+          <p>Se muestra una breve información</p>
+       </a>
+       </li>
+         <li class="ui-first-child ui-last-child">
+       <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>LINKS PARA MAS INFORMACIÓN</h2>
+           <p>Se dan links para mas información</p>
+       </a>
+       </li>
+        <div data-role="collapsible" data-content-theme="false">
+   <h1>DESARROLLADO POR</h1>
+   <div>
+     <p>DIANA MISHELL SUAREZ AVILA </p>
+     <p>4° &quot;H&quot;</p>
+     <p>PROFESOR: LIC. JOSE ANTONIO GOMEZ HERNANDEZ</p>
+     <div><img src="imagenes/yo.jpg" width="15%" height="236"></div>
+   </div>
+      </div>
+      </ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    <div>
+     <h4>DIANA MISHELL SUAREZ AVILA</h4>
+   </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> ATLIXCO</h1>
+  </div>
+    <div data-role="content" align="center">
+<div>
+ <div data-role="controlgroup" data-type="horizontal">
+     
+    <a href="https://www.youtube.com/watch?v=0rGhEaN-cw8" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">Atlixco de las Flores - ¡Un Pueblo Mágico deslumbrante!</a>
+    </div>
+  <p>Hacia el año 1100 A.C. el valle de Atlixco se hallaba ocupado por pobladores de origen Teochichimeca, Chichimeca y Xicalancas que bajo el dominio de la gran Tenochtitlan, se asentaron primeramente al poniente del cerro de San Miguel, hoy Solares Grandes.</p>
+
+<P>Estos primeros pueblos fundaron así Quaquechollan (Águila que huye) y que tiempo después llamaron Acapetlahuacan, “Lugar de división del señorío”. Su posición geográfica hizo que fuera escenario de luchas entre los diversos grupos indígenas que estaban asentados en los alrededores.</P>
+
+<P>La nueva población que fundaron fue también llamada Quauhquechollan, pero para confundirla con su antiguo asentamiento la denominaron Huehue Quauhquechollan, es decir la “antigua” o la “vieja” Quauhquechollan A la llegada de los españoles, el poblado indígena que existía era Acapetlahuacan.</P>
+
+<P>Al crecer la comunidad española, se realizaron las gestiones necesarias ante la Corona para que se les autorizara la fundación de la Villa de Carrión. Don Pedro del Castillo Maldonado y Cristóbal Ruiz Cabrera fundaron la Villa de Carrión, hoy Atlixco, pasando a ser los primeros Alcaldes Ordinarios.</P>
+
+<P>La fertilidad del Valle hizo que la Villa de Carrión pronto fuera una importante zona agrícola, convirtiéndose ya para principios de siglo XVII en el primer granero de la Nueva España lo que llamó la atención de órdenes religiosas como la de los franciscanos, agustinos, carmelitas, mercedarios, juaninos y la de las monjas clarisas, que llegaron hasta el valle para edificar sus conventos.</P>
+
+<P>El 4 de mayo de 1862 un día antes de la Batalla de Puebla los atlixquenses repelieron el ataque de las tropas conservadoras de Leonardo Márquez obligándolo a retirarse y de esta forma se evitó que sus tropas llegaran a reforzar a los franceses en Puebla siendo este un factor importante para alcanzar la victoria al día siguiente, este hecho histórico se conoce como la Batalla de Atlixco</P>
+
+<P>Por lo cual, el gobierno de Juárez consideró que sin el triunfo del 4 de Mayo en Atlixco no hubiera sido posible la victoria de la batalla de Puebla en los Fuertes de Loreto, el 5 de mayo de 1862. Por este motivo, el 20 de noviembre de 1998, el Congreso del Estado de Puebla declaró a Atlixco Heroica Ciudad.</P>
+
+<P>El 26 de noviembre de 1998 el H. Congreso del Estado declaró Heroica a la Ciudad de Atlixco.
+ </p>
+ <h2>Heroica Ciudad de Atlixco</h2>
+ <p><img src="imagenes/ATLIXCO2.jpg" width="45%" height="237" /></p>
+ 
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>ESCUDO DE ATLIXCO</h1>
+   <div><img src="imagenes/ATLIXCO3.gif" width="35%" height="293"></div>
+    </div>
+       <div data-role="collapsible" data-content-theme="false">
+   <h1>UBICACION EN EN EL MAPA DE PUEBLA</h1>
+   <div><img src="imagenes/ATLIXCO4.png" width="40%" height="340"></div>
+      </div>
+     
+</div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>HOSPITAL MUNICIPAL Y PINACOTECA SAN JUAN DE DIOS</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Uno de los pocos hospitales de la época de la colonia que sigue conservando su uso original, así como una fuente de piedra que representa a San Adrián luchando con un león. En la Pinacoteca podrás apreciar la colección de la vida de San Juan de Dios, fundador de la orden de los “Juaninos” quienes se encargaban de los hospitales en la Nueva España. El acceso a la pinacoteca municipal se solicita previa cita en las oficinas de turismo. A un lado del hospital se encuentra la iglesia dedicada a San Rafael Arcángel, a quienes los juaninos se encomendaban. Está prohibido tomar fotos y entrar con alimentos. </p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image50','','imagenes/ATLIXCO6.jpg',1)"><img src="imagenes/ATLIXCO5.jpg" width="375" height="260" id="Image50"></a>  </p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image49','','imagenes/ATLIXCO7.1.jpg',1)"><img src="imagenes/ATLIXCO7.JPG" width="375" height="298" id="Image49"></a></p>
+</div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CENTRO CULTURAL EL CARMEN</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>Ubicado dentro del Exconvento del Carmen no te puedes perder el recorrido por las salas con contenido prehispánico, de tradiciones con la sala del Huey Atlixcayotl donde las etnias del municipio nos muestran un poquito de su cultura; asimismo el recorrido por la sala de Arte Sacro con las obras de Santa Clara, Memorias de un Templo.</p>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image45','','imagenes/ATLIXCO8.1.jpg',1)"><img src="imagenes/atlixco8.jpg" width="305" height="257" id="Image45"></a>
+<p>La Iglesia y el Convento del Carmen fue fundada en Atlixco por la orden de los Carmelitas y data de 1600 a 1620. En su interior cuenta con un claustro pequeño, uno o dos claustros grandes, huerta, dependencias e iglesia anexa a todo el convento, al igual que todas las construcciones de la orden.</p>
+
+<p>A lo largo de su historia ha sido sido utilizado como sede del Gobierno Municipal, Palacio de Justicia e incluso como Cuartel de tropas federales durante la Revolución mexicana. En la actualidad es sede del Centro Cultural del Carmen.</p>
+<div><img src="imagenes/atlixco9.jpg" width="45%" height="172"></div>
+ </div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> EX CONVENTO FRANCISCANO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Anímate a caminar 5 minutos desde el zócalo de la ciudad y disfruta de esta iglesia tipo fuerte, única en el Estado, además de su bello retablo restaurado por la Asociación “Adopte una Obra de Arte” y podrás admirar la hermosa vista del poniente de la ciudad desde su atrio. ¡Muchas parejas escogen esta bella iglesia para su boda!</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image48','','imagenes/atlixco10.1.jpg',1)"><img src="imagenes/ATLIXCO10.jpg" width="290" height="217" id="Image48"></a>
+<p>El ex-convento franciscano de Santa María de Jesús se ubica en el cerro de San Miguel, lugar ceremonial donde se celebra el Huey Atlixcayotl. Data del siglo XVI. Construido en dos periodos, el primero abarca de 1538 a 1550, el segundo de 1560 a 1620. Perteneció a los franciscanos, dedicado a evangelizar a los indígenas de la región. El conjunto arquitectónico lo forman un gran atrio, el templo y el convento. Tiene una puerta atrial con dos arcos y en la fachada los nichos del vía crucis. A mediados del siglo XIX fueron colocados en el templo parte de los bienes muebles de la iglesia del Carmen destacando entre ellos el retablo mayor que es considerado como uno de los más bellos que se ejecutaron en la Nueva España durante el siglo XVII.</p>
+<p>Es la primera fundación franciscana en el lugar que en el momento de la conquista española se llamó Acapetlahucán, que quiere decir; “lugar donde se hacían esteras de caña seca”, ubicada en las faldas del ahora cerro de San Miguel.
+Es durante el gobierno de la primera audiencia que fray Toribio de Benavente, “Motolinia”, funda entre los años de 1551 y 1562 el templo en una congregación de indios que había ayuntado fray Alonso de Buendía y lo dedica a la Visitación de Nuestra Señora.</p>
+<P>Cuentan con guía.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/atlixco11.1.jpg',1)"><img src="imagenes/ATLIXCO11.jpg" width="258" height="255" id="Image2"></a>
+<div data-role="controlgroup" data-type="horizontal">
+  <a href="https://www.youtube.com/watch?v=6ZyxTp7MzKQ" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">EX CONVENTO FRANCISCANO</a>
+</div>
+ </div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>CERRO DE SAN MIGUEL</h1>
+      </div>
+  <div data-role="content" align="center">
+    <div>
+      <div data-role="controlgroup" data-type="horizontal">
+    <a href="https://www.youtube.com/watch?v=5lKVH14YEgo" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">Las leyendas del cerro de San Miguel</a>
+</div>
+      <p>La magia inigualable, en una zona geográfica que goza del hoy llamado &ldquo;Mejor clima del mundo&rdquo;, cuyos paisajes inigualables y coloridos llenos de misticismo en complicidad con los dos colosos de la madre naturaleza de belleza incomparable llamados Popocatepetl e Iztaccihuatl, los cuales parecieran emanar una energía épica, ideal para generar un entorno verdaderamente mágico.      </p>
+      <p>Es aquí entonces donde se desarrolló esta gran ciudad llamada Atlixco la cual es un ícono para cada uno de los habitantes de esta ciudad y un atractivo único para los visitantes que aprecian el mágico Cerro de San Miguel el cual está enclavado en pleno centro de la ciudad y en este un ex convento de con las características de un castillo medieval. </p>
+      <P><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/ATLIXCO12.1.jpg',1)"><img src="imagenes/ATLIXCO12.jpg" width="320" height="240" id="Image4"></a><P/>
+<p>Se dice que Desde antiguo las familias atlixquenses subían al cerro a divertirse, llevaban comida, volaban papalotes, sobre todo durante el mes de septiembre muchos jóvenes ascendían al cerro a partir de las cinco de la mañana para entrar a la ermita y escuchar misa, alumbrados de teas y cantar durante una semana las mañanitas tradicionales al ángel que además es el abogado del diablo en la Corte Celestial. </p>
+      <p>El cerro ha sido testigo de toda la vida de Atlixco y sus habitantes. Es un cerro que encierra misterios, energías, guarda voces del tiempo, testigo de la transformación de la ciudad y su gente. Es un cerro que desde ahí cerca de 50 años se juntan las etnias de la región y del estado para bailarle a Quetzalcóatl y a Macuilxochitl en el Huey Atlixcáyotl, antiquísima fiesta de celebraciones mediante la música y el baile para dar de comer y agradar a los dioses antiguos y a los santos modernos que tienen como emblema de redención en Cristo. </p>
+      <p>Si tienes ánimo aventurero te invitamos a subir al Cerro de San Miguel para que eches un vistazo de la ciudad desde sus miradores y si todavía te quedan un poco de fuerzas, que subas la escalinata hasta la Ermita dedicada al Arcángel San Miguel, que cuenta la historia, encerró al diablito que hacía de las suyas en los solares dentro del pozo que se encuentra ahí.      </p>
+      <div><img src="imagenes/ATLIXCO13.jpg" width="44%" height="229"></div>
+      <div><img src="imagenes/ATLIXCO14.jpg" width="45%" height="217"></div> 
+    </div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>GASTRONOMIA</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/comida1.jpg" alt="COMIDA1" title="COMIDA1" id="wows1_0"/></li>
+		<li><img src="data1/images/comida2.jpg" alt="COMIDA2" title="COMIDA2" id="wows1_1"/></li>
+		<li><img src="data1/images/comida3.jpg" alt="COMIDA3" title="COMIDA3" id="wows1_2"/></li>
+		<li><img src="data1/images/comida4.jpg" alt="COMIDA4" title="COMIDA4" id="wows1_3"/></li>
+		<li><img src="data1/images/comida5.jpg" alt="COMIDA5" title="COMIDA5" id="wows1_4"/></li>
+		<li><img src="data1/images/comida6.jpg" alt="COMIDA6" title="COMIDA6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/comida7.jpg" alt="wowslideshow" title="COMIDA7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/logo.png" alt="LOGO" title="LOGO" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="COMIDA1"><span><img src="data1/tooltips/comida1.jpg" alt="COMIDA1"/>1</span></a>
+		<a href="#" title="COMIDA2"><span><img src="data1/tooltips/comida2.jpg" alt="COMIDA2"/>2</span></a>
+		<a href="#" title="COMIDA3"><span><img src="data1/tooltips/comida3.jpg" alt="COMIDA3"/>3</span></a>
+		<a href="#" title="COMIDA4"><span><img src="data1/tooltips/comida4.jpg" alt="COMIDA4"/>4</span></a>
+		<a href="#" title="COMIDA5"><span><img src="data1/tooltips/comida5.jpg" alt="COMIDA5"/>5</span></a>
+		<a href="#" title="COMIDA6"><span><img src="data1/tooltips/comida6.jpg" alt="COMIDA6"/>6</span></a>
+		<a href="#" title="COMIDA7"><span><img src="data1/tooltips/comida7.jpg" alt="COMIDA7"/>7</span></a>
+		<a href="#" title="LOGO"><span><img src="data1/tooltips/logo.png" alt="LOGO"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>GASTRONOMIA</h1>
+   <div><p>No te puedes ir de Atlixco sin probar estos platillos en sus tradicionales Mercados o restaurantes del municipio.</p>
+<p>CECINA</p> 
+<p>Un platillo por el que después de probarlo querrás volver Atlixco, la tradicional cecina de Atlixco, elaborado por cecineros del municipio de manera artesanal este platillo es básico dentro de la cocina atlixquense, acompañado de sus guarniciones de queso, aguacate y nopales. </p>
+<p> Taco Placero.  </p>
+<p>Mejores no encontraras en Atlixco rellenos de cualquier guisado simple, combinado o no con una dosis de arroz a la mexicana; los hay de chicharrón prensado, tinga, huevos duros, nopales con huevo, longaniza con papas, chicharrón guisado en salsa verde o roja, bistec con nopales, costilla de puerco en adobo, entre otros.</p>
+<p> Enchiladas.</p>
+<p> Los rollitos que se forman uno tras otro para cubrirse de una delicada salsa. Rellenas de pollo, bañadas en salsa verde, roja o mole que se acompañan de lechuga, aguacate, crema, queso, rábano y cebolla, listos para degustarse calientitos y bien bañaditos.</p>
+<p> Barbacoa.</p>
+<p> El estilo de carne con un sabor inigualable que te hará chupar los dedos.
+  La carne de borrego hecha en barbacoa es uno de los estilos de popularidad en el centro del país. Elaborada dentro de la tierra con hojas de maguey alcanza su mejor punto en sabor; lo puedes preparar en taco o simplemente con una rica salsa y aguacate. No olvides el consomé que se produce al cocinar la barbacoa.  </p>
+<p>Entre otros.</p>
+   </div>
+      </div>
+</div>
+</div>
+
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>VISITA METEPEC, UN LUGAR DIFERENTE.</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Bello Centro Vacacional, localizado en el Estado de Puebla, inmerso en un bosque que enriquece el espíritu con su apacible atmósfera. En Atlixco-Metepec usted disfrutará de actividades recreativas como la pesca deportiva, rodeado de un hermoso y verde paisaje con temperatura templada en un ambiente relajante, donde podrá admirar al legendario volcán Popocatépetl. Metepec es el Centro Vacacional que le brinda la paz y tranquilidad que siempre ha buscado para toda su familia. </p>
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>VACACIONAL</h1>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/VACACIONAL1.jpg',1)"><img src="imagenes/VACACIONAL.jpg" width="398" height="275" id="Image3"></a> </div>
+    <P>En Metepec tambien hay un zocalo en donde puedes venir con tu familia a pasar un lindo rato, los domingos es cuando mas personas hay, ven y diviertete con nosotros</P>
+     <div data-role="collapsible" data-content-theme="false">
+    <h1>ZOCALO   </h1>
+    <div><img src="imagenes/METEPEC1.jpg" width="55%" height="299"></div>
+    </div>
+    <P>Y no deja de sorprendernos con lo que hay alla, tambien cuenta con un campo de beisbol al igual que con area de futbol, es muy entretenido el lugar y hay partidos que puedes ir a disfrutar con tu familia</P>
+     <div data-role="collapsible" data-content-theme="false">
+    <h1>CAMPO DE BEISBOL</h1>
+   <div><img src="imagenes/METEPEC2.jpg" width="55%" height="299"></div>
+    </div>
+</div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>VILLA ILUMINADA</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/villa1.jpg" alt="VILLA1" title="VILLA1" id="wows1_0"/></li>
+		<li><img src="data1/images/villa2.jpg" alt="VILLA2" title="VILLA2" id="wows1_1"/></li>
+		<li><img src="data1/images/villa3.jpg" alt="VILLA3" title="VILLA3" id="wows1_2"/></li>
+		<li><img src="data1/images/villa4.jpg" alt="VILLA4" title="VILLA4" id="wows1_3"/></li>
+		<li><img src="data1/images/villa5.jpg" alt="VILLA5" title="VILLA5" id="wows1_4"/></li>
+		<li><img src="data1/images/villa6.jpg" alt="VILLA6" title="VILLA6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/villa7.jpg" alt="cssslider" title="VILLA7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/villa8.jpg" alt="VILLA8" title="VILLA8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="VILLA1"><span><img src="data1/tooltips/villa1.jpg" alt="VILLA1"/>1</span></a>
+		<a href="#" title="VILLA2"><span><img src="data1/tooltips/villa2.jpg" alt="VILLA2"/>2</span></a>
+		<a href="#" title="VILLA3"><span><img src="data1/tooltips/villa3.jpg" alt="VILLA3"/>3</span></a>
+		<a href="#" title="VILLA4"><span><img src="data1/tooltips/villa4.jpg" alt="VILLA4"/>4</span></a>
+		<a href="#" title="VILLA5"><span><img src="data1/tooltips/villa5.jpg" alt="VILLA5"/>5</span></a>
+		<a href="#" title="VILLA6"><span><img src="data1/tooltips/villa6.jpg" alt="VILLA6"/>6</span></a>
+		<a href="#" title="VILLA7"><span><img src="data1/tooltips/villa7.jpg" alt="VILLA7"/>7</span></a>
+		<a href="#" title="VILLA8"><span><img src="data1/tooltips/villa8.jpg" alt="VILLA8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>5 razones para ir a la Villa Iluminada de Atlixco</h1>
+   <div>
+     <p>Atlixco es un encantador pueblo a 30 km de la capital del estado de Puebla. Se trata de un tranquilo refugio muy frecuentado por los habitantes de la ciudad durante los fines de semana y las vacaciones. </p>
+     <p>1.- ¡ Es espectacular! No se trata de la típica iluminación navideña que se ve por todas partes. Con luces LED de colores, impresionantes diseños que cubren calles completas y más de 3 mil figuras navideñas, se trata de un verdadero espectáculo que vale el viaje a Atlixco.</p>
+     <p>2.- Hay eventos culturales En estos días, el pueblo alberga una decena de eventos culturales como conciertos y presentaciones teatrales. Participan grupos de más de 30 países como Colombia, España, Libia, Kenia, Italia y otros, además de grupos locales y nacionales.       </p>
+     <p>3.- Se come riquísimo Además de la iluminación, se instalará un corredor gastronómico con lo mejor de la gastronomía mexicana y poblana. Recorre las coloridas calles de Atlixco y termina en un puesto de deliciosos antojitos de la mejor calidad.       </p>
+     <p>4.- Puedes llevar a los niños A los pequeños les encantará el espectáculo de las luces, pero además habrá una Feria de la Nochebuena y una Villa Infantil, una zona dedicada a los niños.</p>
+     <p> 5.- Los museos cierran más tarde Durante la Villa Iluminada de Atlixco, los museos extienden sus horarios hasta las 8 de la noche, por lo que es una excelente oportunidad para hacer un recorrido por los museos de Atlixco. </p>
+   </div>
+      </div>
+</div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>LINKS PARA MAS INFORMACION</h1>
+      </div>
+  <div data-role="content" align="center">
+    <div>
+    <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://atlixco.gob.mx/" class="ui-btn ui-corner-all">ATLIXCO, CONSTRUYENDO COSAS NUEVAS</a>
+    </div>
+     <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://www.puebla.travel/es/atlixco" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">ATLIXCO TRAVEL</a>
+    </div>
+     <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://www.unotv.com/noticias/portal/turismo/detalle/checa-el-tapete-monumental-en-atlixco-por-semana-santa-207096/" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">TAPETE MONUMENTAL</a>
+</div>
+ <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://www.corazondepuebla.com.mx/atlixco.html" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">GUIA DE VIAJE</a>
+</div>
+ <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://www.excelsior.com.mx/nacional/2017/03/23/1153672" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-right">RAZONES PARA VISITAR ESTA JOYA DE PUEBLA</a>
+</div>
+    </div>
+</div>
+<div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+ <div>
+    <img src="imagenes/mdpi.png" width="89" height="88"/>
+    </div>
+<h4>GUIA TURISTICA</h4>
+</div>
+</div>
+</body>
+</html>
